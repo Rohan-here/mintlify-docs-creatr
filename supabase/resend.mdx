@@ -1,0 +1,51 @@
+---
+title: Resend Integration
+description: "Integrate Resend using Supabase Edge Functions and Creatr AI"
+---
+
+## Resend Integration
+
+Resend integration empowers your application with reliable email delivery capabilities. **Note:** Before you begin, ensure that you have already integrated Supabase with Creatr, and that Supabase Edge Functions are enabled. This is a required prerequisite for integrating Resend.
+
+## What You'll Need
+
+To get started with Resend integration, have the following details handy:
+- **Resend API Key:** Your secret key provided by Resend.
+- **Domain (Optional):** A custom domain if you wish to use one.
+- **Sender Email:** The email address from which your emails will be sent.
+
+## How to Integrate Resend
+
+### 1. Verify Your Supabase Integration
+
+Before proceeding, confirm that your Supabase integration (with Edge Functions enabled) is active in your Creatr project. Resend leverages Supabase Edge Functions to manage and execute email delivery tasks.
+
+### 2. Enter Your Resend API Key
+
+Navigate to the Resend Integration module in your Creatr dashboard. Enter your Resend API key in the designated field. This key authenticates your connection to Resend's email services.
+
+### 3. Configure Your Domain (Optional)
+
+If you have a custom domain that you want to use with Resend, enter it in the domain field. This step is optional but recommended if you prefer to send emails from your own domain.
+
+### 4. Provide the Sender Email
+
+Input the email address that will serve as the sender for your emails. This address will appear in the "From" field when recipients receive your emails.
+
+### 5. Finalize and Deploy
+
+Once you have entered all the required details:
+- **Review your configuration.**
+- **Submit the integration.**
+- Creatr will connect your project to Resend via Supabase Edge Functions, enabling seamless email delivery.
+
+## Testing Your Integration
+
+After deployment, test the integration by triggering an email from your application. Verify that:
+- The email is sent successfully.
+- The sender email and (if provided) domain are correctly applied.
+- All error handling works as expected via the Supabase Edge Functions.
+
+---
+
+By following these steps, you'll integrate Resend with your Creatr project, harnessing the power of Supabase Edge Functions for robust email functionality. Happy building!

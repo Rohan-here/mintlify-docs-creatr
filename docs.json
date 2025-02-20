@@ -15,10 +15,23 @@
         "groups": [
           {
             "group": "Get Started",
+            "pages": ["introduction", "quickstart", "development"]
+          },
+          {
+            "group": "Integrations",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              {
+                "group": "Supabase",
+                "pages": [
+                  "supabase/introduction",
+                  "supabase/how-to",
+                  "supabase/edge-functions"
+                ]
+              },
+              {
+                "group": "Resend",
+                "pages": ["supabase/resend"]
+              }
             ]
           },
           {
@@ -39,9 +52,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoint Examples",
@@ -99,3 +110,4 @@
     }
   }
 }
+
