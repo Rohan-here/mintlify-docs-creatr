@@ -1,0 +1,81 @@
+---
+title: "Resend Integration"
+description: "Integrate Resend using Supabase Edge Functions and Creatr AI"
+sidebarTitle: "Resend"
+icon: "envelope"
+iconType: "solid"
+mode: "default"
+---
+
+## Overview
+
+Resend integration empowers your application with reliable email delivery capabilities—perfect for sending welcome messages, password resets, newsletters, and more. 
+<br /><br />**Note:** Before you begin, ensure you’ve already integrated Supabase with Creatr (including Edge Functions), as Resend relies on those functions to handle email tasks.
+
+## What You’ll Need
+
+- **Resend API Key:** Obtain this from your Resend account.
+- **Domain (Optional):** A custom domain to send emails from (e.g., `yourdomain.com`).
+- **Sender Email:** The email address that recipients will see in the “From” field.
+
+## 1. Verify Your Supabase Integration
+
+Confirm that:
+- **Supabase** is integrated with your Creatr project.
+- **Edge Functions** are enabled in Supabase.
+
+Resend leverages Supabase Edge Functions to manage email delivery, so these prerequisites are essential.
+
+## 2. Access the Resend Integration Popup
+
+In your Creatr dashboard, navigate to **Integrations** and select **Resend**. You’ll see a popup prompting you to connect your Resend account:
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/resend-popup.png"
+  alt="Resend Integration Popup - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/resend-popup.png"
+  alt="Resend Integration Popup - Dark Mode"
+/>
+
+## 3. Enter Your Resend API Key
+
+- **API Key Field:** Paste in your Resend API key.  
+- **Alternate Storage:** If you prefer, you can store this key in your Supabase dashboard and reference it from there.
+
+```plaintext
+re_****
+```
+
+> **Tip:** Keep your API key private. Never commit it to public repositories.
+
+## 4. (Optional) Configure a Custom Domain
+
+If you’d like to send emails from your own domain (e.g., `hello@yourdomain.com`):
+1. Enter your domain name in the popup.  
+2. Follow Resend’s domain verification steps (DNS records, etc.) to finalize your custom domain setup.
+
+## 5. Specify Sender Email
+
+In the **Sender Email** field, input the address from which your emails will be sent. This will appear in recipients’ inboxes under the “From” field.
+
+## 6. Finalize and Deploy
+
+- **Review Configuration:** Double-check your API key, domain (if any), and sender email.  
+- **Connect Resend:** Click **Connect Resend** to complete the integration.  
+- **Deployment:** Once everything is set, deploy your project. Supabase Edge Functions will handle the email sending process behind the scenes.
+
+## Testing Your Integration
+
+After deployment, send a test email to ensure:
+- Emails are delivered successfully.
+- Your domain (if configured) is properly applied.
+- The “From” address matches your Sender Email.
+- Any errors are logged and can be viewed in Supabase’s Edge Functions logs.
+
+---
+
+By following these steps, you’ll seamlessly integrate Resend into your Creatr project via Supabase Edge Functions—giving you a reliable, scalable way to send emails from your web app. Happy building!

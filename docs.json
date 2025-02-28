@@ -9,40 +9,58 @@
   },
   "favicon": "/favicon-32x32.png",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": ["introduction", "quickstart"]
-          },
-          {
-            "group": "Integrations",
-            "pages": [
-              {
-                "group": "Supabase",
-                "pages": [
-                  "supabase/introduction",
-                  "supabase/how-to",
-                  "supabase/edge-functions"
-                ]
-              },
-              {
-                "group": "Resend",
-                "pages": ["supabase/resend"]
-              }
-            ]
-          }
+        "group": "Get Started",
+        "pages": ["introduction/what-is-creatr", "introduction/getting-started"]
+      },
+      {
+        "group": "Using Creatr",
+        "pages": [
+          "using/enter-the-prompt",
+          "using/dashboard-overview",
+          "using/editing-and-deployment"
         ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          {
+            "group": "Supabase",
+            "pages": [
+              "integrations/supabase/introduction",
+              "integrations/supabase/how-to",
+              "integrations/supabase/edge-functions"
+            ]
+          },
+          "integrations/openai",
+          "integrations/resend"
+        ]
+      },
+      {
+        "group": "Advanced Features & Customizations",
+        "pages": [
+          "advanced/attachments",
+          "advanced/enhancing-prompts",
+          "advanced/components-and-select-elements",
+          "advanced/forking-projects",
+          "advanced/export-options"
+        ]
+      },
+      {
+        "group": "Project Management & Analytics",
+        "pages": ["management/project-analytics", "management/changing-assets"]
+      },
+      {
+        "group": "Support & Resources",
+        "pages": ["support/contact-support", "support/knowledge-base"]
       }
     ],
     "global": {
       "anchors": [
         {
           "anchor": "Creatr",
-          "href": "https://getcreatr.com",
-          "icon": "book-open-cover"
+          "href": "https://getcreatr.com"
         }
       ]
     }
@@ -71,4 +89,3 @@
     }
   }
 }
-
