@@ -1,0 +1,65 @@
+---
+title: 'Connecting Squarespace domain to Creatr'
+description: 'Learn how to connect your Squarespace domain to your Creatr project'
+---
+
+If you purchased a domain from Squarespace and want to use it on a Creatr project without moving the hosting to Creatr, then this guide will help you manually connect your Squarespace domain to Creatr.
+
+### On this page
+
+- [Step 1: Connect your domain to Creatr](#step-1-connect-your-domain-to-creatr)
+- [Step 2: Log in to your Squarespace account](#step-2-log-in-to-your-squarespace-account)
+- [Step 3: Add the CNAME records](#step-3-add-the-cname-records)
+- [Step 4: Add another CNAME record](#step-4-add-another-cname-record)
+- [Step 5: Verify connection](#step-5-verify-connection)
+- [Troubleshooting](#troubleshooting)
+
+### Step 1: Connect your domain to Creatr
+
+1. From your Project workspace, go to **Settings** > **Manage Custom Domains**.
+2. Enter **domain**.
+3. Click **Save**
+
+
+### Step 2: Log in to your Squarespace account
+
+1. Open a new browser tab, and then log in to your **Squarespace account**.
+2. Click **Account dashboard** > **Domains**, and then click the domain that you want to connect to Creatr.
+3. Click **DNS**.
+4. Optional: If you have existing records that you want to keep, such as **MX** records or **TXT** records, then save them in a Word Document or Google Docs.
+5. Click the trash can icon to delete the existing Squarespace DNS records.
+![Squarespace DNS management interface showing Account Settings and Domains section](/images/custom-domain/squarespace/image.png)
+
+### Step 3: Add the CNAME records
+
+1. From the DNS settings of your Squarespace domain, click **ADD RECORD**.
+2. Enter the following **CNAME** record to your DNS settings:
+   * Host: **_acme-challenge.hostname**
+   * Type: **CNAME**
+   * Priority: **-**
+   * Data: **hostname.a717d819c68725fc.dcv.cloudflare.com**
+3. Click **SAVE**.
+![Squarespace DNS management interface showing Account Settings and Domains section](/images/custom-domain/squarespace/image_cname.png)
+
+### Step 4: Add another CNAME record
+
+1. From the DNS settings of your Squarespace domain, click **ADD RECORD**.
+2. Enter the following **CNAME** record to your DNS settings:
+   * Host: **www**
+   * Type: **CNAME**
+   * Priority: **-**
+   * Data: **customers.getcreatr.app**
+3. Click **SAVE**.
+
+### Step 5: Verify connection
+
+1. From your Creatr admin, go to **Settings** > **Manage Custom Domains**.
+2. After your domain is verified, it will be displayed as connected on the **Manage Custom Domains** tab in your Project Settings.
+
+> **Note**
+>
+> It's normal to have a warning stating, `Domain connection Pending`, because some providers can take longer to verify the connection.
+
+## Troubleshooting
+
+If the message **This domain is already connected is displayed**, then you need to **verify your domain and projects**.

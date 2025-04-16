@@ -1,0 +1,63 @@
+---
+title: 'Connecting a GoDaddy domain to Creatr'
+description: 'Learn how to connect your GoDaddy domain to your Creatr project'
+---
+
+### On this page
+
+- [Step 1: Connect your domain to Creatr](#step-1-connect-your-domain-to-creatr)
+- [Step 2: Log in to your GoDaddy account](#step-2-log-in-to-your-godaddy-account)
+- [Step 3: Update the CNAME records](#step-3-update-the-a-records)
+- [Step 4: Update the CNAME records](#step-4-update-the-cname-records)
+- [Step 5: Verify connection](#step-5-verify-connection)
+- [Troubleshooting](#troubleshooting)
+
+### Step 1: Connect your domain to Creatr
+
+1. From your Project workspace, go to **Settings** > **Manage Custom Domains**.
+2. Enter **domain**.
+3. Click **Save**
+
+### Step 2: Log in to your GoDaddy account
+
+1. Open a new browser tab, and then log in to your **GoDaddy Domain Portfolio**.
+2. Select the domain that you want to connect to Creatr.
+3. Click **DNS**.
+
+![GoDaddy DNS management interface showing Account Settings and Domains section](/images/custom-domain/godaddy/image.png)
+
+### Step 3: Add the CNAME records
+
+1. Locate the **CNAME** record, and then click the pencil icon.
+2. Enter the following **CNAME** record to your DNS settings:
+   - Type: **CNAME**
+   - Name: **_acme-challenge.hostname**
+   - Value: **hostname.a717d819c68725fc.dcv.cloudflare.com**
+   - TTL: **1 hour**
+3. Click **Save**.
+
+![GoDaddy DNS management interface showing Account Settings and Domains section](/images/custom-domain/godaddy/image_cname.png)
+
+
+### Step 4: Add another CNAME records
+
+1. Add new the **CNAME** record.
+2. Enter the following **CNAME** record to your DNS settings:
+   - Type: **CNAME**
+   - Name: **www**
+   - Value: **customers.getcreatr.app**
+   - TTL: **1 hour**
+3. Click **Save**.
+
+### Step 5: Verify connection
+
+1. From your Creatr admin, go to **Settings** > **Manage Custom Domains**.
+2. After your domain is verified, it will be displayed as connected on the **Manage Custom Domains** tab in your Project Settings.
+
+> **Note**
+>
+> It's normal to have a warning stating, `Domain connection Pending`, because some providers can take longer to verify the connection.
+
+## Troubleshooting
+
+If the message **This domain is already connected is displayed**, then you need to **verify your domain and projects**. 

@@ -1,0 +1,63 @@
+---
+title: 'Connecting an Alibaba Cloud domain to Creatr'
+description: 'Learn how to connect your Alibaba Cloud domain to your Creatr project'
+---
+
+If you purchased a domain from Alibaba Cloud and want to use it on a Creatr project without moving the hosting to Creatr, then this guide will help you manually connect your Alibaba Cloud domain to Creatr.
+
+### On this page
+
+- [Step 1: Connect your domain to Creatr](#step-1-connect-your-domain-to-creatr)
+- [Step 2: Log in to your Alibaba Cloud account](#step-2-log-in-to-your-alibaba-cloud-account)
+- [Step 3: Add the CNAME records](#step-3-add-the-cname-records)
+- [Step 4: Add another CNAME record](#step-4-add-another-cname-record)
+- [Step 5: Verify connection](#step-5-verify-connection)
+- [Troubleshooting](#troubleshooting)
+
+### Step 1: Connect your domain to Creatr
+
+1. From your Project workspace, go to **Settings** > **Manage Custom Domains**.
+2. Enter **domain**.
+3. Click **Save**
+
+### Step 2: Log in to your Alibaba Cloud account
+
+1. Open a new browser tab and log in to your **Alibaba Cloud account**.
+2. Click **Console**.
+3. Click **Domain names**.
+![Alibaba DNS management interface showing Account Settings and Domains section](/images/custom-domain/alibaba/image.png)
+
+### Step 3: Add the CNAME records
+
+1. Click **Domain Name Resolution**.
+2. Click **Add DNS Record**.
+3. For **Record Type**, select **CNAME**.
+4. In **Hostname**, enter **_acme-challenge.hostname**.
+5. In **DNS Request Source**, select **Default**.
+6. In **Record Value**, enter **hostname.a717d819c68725fc.dcv.cloudflare.com**.
+7. In **TTL Period**, select **10 (Recommended)**.
+8. Click **OK**.
+![Alibaba DNS management interface showing Account Settings and Domains section](/images/custom-domain/alibaba/image_cname.png)
+
+### Step 4: Add another CNAME record
+
+1. Click **Add DNS Record** again.
+2. For **Record Type**, select **CNAME**.
+3. In the **Hostname** field, type **www**.
+4. In **DNS Request Source**, select **Default**.
+5. In **Record Value**, enter **customers.getcreatr.app**.
+6. In **TTL Period**, select **10 (Recommended)**.
+7. Click **OK**.
+
+### Step 5: Verify connection
+
+1. From your Creatr admin, go to **Settings** > **Manage Custom Domains**.
+2. After your domain is verified, it will be displayed as connected on the **Manage Custom Domains** tab in your Project Settings.
+
+> **Note**
+>
+> It's normal to have a warning stating, `Domain connection Pending`, because some providers can take longer to verify the connection.
+
+## Troubleshooting
+
+If the message **This domain is already connected is displayed**, then you need to **verify your domain and projects**.

@@ -12,7 +12,10 @@
     "groups": [
       {
         "group": "Get Started",
-        "pages": ["introduction/what-is-creatr", "introduction/getting-started"]
+        "pages": [
+          "introduction/what-is-creatr",
+          "introduction/getting-started"
+        ]
       },
       {
         "group": "Using Creatr",
@@ -38,6 +41,12 @@
         ]
       },
       {
+        "group": "Connecting a third-party domain to Creatr",
+        "pages": [
+          "custom-domains-guides/custom-domain"
+        ]
+      },
+      {
         "group": "Advanced Features & Customizations",
         "pages": [
           "advanced/attachments",
@@ -49,11 +58,17 @@
       },
       {
         "group": "Project Management & Analytics",
-        "pages": ["management/project-analytics", "management/changing-assets"]
+        "pages": [
+          "management/project-analytics",
+          "management/changing-assets"
+        ]
       },
       {
         "group": "Support & Resources",
-        "pages": ["support/contact-support", "support/knowledge-base"]
+        "pages": [
+          "support/contact-support",
+          "support/knowledge-base"
+        ]
       }
     ],
     "global": {

@@ -1,0 +1,61 @@
+---
+title: 'Connecting a Network Solutions domain to Creatr'
+description: 'Learn how to connect your Network Solutions domain to your Creatr project'
+---
+
+If you purchased a domain from Network Solutions and want to use it on a Creatr project without moving the hosting to Creatr, then this guide will help you manually connect your Network Solutions domain to Creatr.
+
+### On this page
+
+- [Step 1: Connect your domain to Creatr](#step-1-connect-your-domain-to-creatr)
+- [Step 2: Log in to your Network Solutions account](#step-2-log-in-to-your-network-solutions-account)
+- [Step 3: Add the CNAME records](#step-3-add-the-cname-records)
+- [Step 4: Add another CNAME record](#step-4-add-another-cname-record)
+- [Step 5: Verify connection](#step-5-verify-connection)
+- [Troubleshooting](#troubleshooting)
+
+### Step 1: Connect your domain to Creatr
+
+1. From your Project workspace, go to **Settings** > **Manage Custom Domains**.
+2. Enter **domain**.
+3. Click **Save**
+
+### Step 2: Log in to your Network Solutions account
+
+1. Open a new browser tab and log in to your **Network Solutions account**.
+2. Click **Domains**.
+3. Scroll to the bottom, and then select **Advanced Tools**.
+![Network Solutions DNS management interface showing Account Settings and Domains section](/images/custom-domain/network_solutions/image1.png)
+4. Click **MANAGE** for the domain that you want to connect to Creatr.
+![Network Solutions DNS management interface showing Account Settings and Domains section](/images/custom-domain/network_solutions/image2.png)
+
+### Step 3: Add the CNAME records
+
+1. Click **Add record**.
+2. Update the **Type** to `CNAME`.
+3. Update **Refers to** to `_acme-challenge.hostname`.
+4. Update **Alias to** to `hostname.a717d819c68725fc.dcv.cloudflare.com`.
+5. Update **TTL** to `1 hour`.
+![Network Solutions DNS management interface showing Account Settings and Domains section](/images/custom-domain/network_solutions/image_cname.png)
+
+### Step 4: Add another CNAME record
+
+1. Click **Add record** again.
+2. Update the **Type** to `CNAME`.
+3. Update **Refers to** to `WWW`.
+4. Update **Alias to** to `customers.getcreatr.app`.
+5. Update **TTL** to `1 hour`.
+6. Click **EDIT**.
+
+### Step 5: Verify connection
+
+1. From your Creatr admin, go to **Settings** > **Manage Custom Domains**.
+2. After your domain is verified, it will be displayed as connected on the **Manage Custom Domains** tab in your Project Settings.
+
+> **Note**
+>
+> It's normal to have a warning stating, `Domain connection Pending`, because some providers can take longer to verify the connection.
+
+## Troubleshooting
+
+If the message **This domain is already connected is displayed**, then you need to **verify your domain and projects**.

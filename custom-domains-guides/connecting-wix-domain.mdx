@@ -1,0 +1,59 @@
+---
+title: 'Connecting a Wix domain to Creatr'
+description: 'Learn how to connect your Wix domain to your Creatr store without moving the hosting'
+---
+
+If you purchased a domain from Wix and want to use it on a Creatr store without moving the hosting to Creatr, then this guide will help you manually connect your Wix domain to Creatr.
+
+### On this page
+
+- [Step 1: Connect your domain to Creatr](#step-1-connect-your-domain-to-creatr)
+- [Step 2: Log in to your Wix account](#step-2-log-in-to-your-wix-account)
+- [Step 3: Add the CNAME records](#step-3-add-the-cname-records)
+- [Step 4: Add another CNAME record](#step-4-add-another-cname-record)
+- [Step 5: Verify connection](#step-5-verify-connection)
+- [Troubleshooting](#troubleshooting)
+
+### Step 1: Connect your domain to Creatr
+
+1. From your Creatr admin, go to **Settings** > **Domains**.
+2. Click **Connect existing domain**.
+3. Enter the domain name and click **Next**.
+
+### Step 2: Log in to your Wix account
+
+1. Open a new browser tab, and then log in to your **Wix account**.
+2. Go to **Account Settings** > **Domains** > **…** > **Manage DNS records**.
+![Wix DNS management interface showing Account Settings and Domains section](/images/custom-domain/wix/image.png)
+
+### Step 3: Add the CNAME records
+
+1. In the **CNAME (Aliases)** section, click **Add record**.
+2. In the **Host name** field, enter **_acme-challenge.hostname**.
+3. In the **Value** field, enter **hostname.a717d819c68725fc.dcv.cloudflare.com**.
+4. Leave the **TTL** as **1 Hour**.
+5. Click **Save**.
+
+### Step 4: Add another CNAME record
+
+1. In the **CNAME (Aliases)** section, click **Add record** again.
+2. In the **Host name** field, enter **www**.
+3. In the **Value** field, enter **shops.myshopify.com**.
+4. Leave the **TTL** as **1 Hour**.
+5. Click **Save**.
+
+![Wix DNS management interface showing Account Settings and Domains section](/images/custom-domain/wix/image_cname.png)
+
+
+### Step 5: Verify connection
+
+1. From your Creatr admin, go to **Settings** > **Domains**.
+2. After your domain is verified, it will be displayed as connected on the Domains page in your Creatr admin.
+
+> **Note**
+>
+> It's normal to have a warning stating, `Domain connection Pending`, because some providers can take longer to verify the connection.
+
+## Troubleshooting
+
+If the message **This domain is already connected is displayed**, then you need to verify your domain and store settings.
