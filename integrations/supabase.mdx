@@ -1,0 +1,243 @@
+---
+title: "Supabase Integration"
+description: "Integrate a backend in your application on Creatr"
+sidebarTitle: "Supabase"
+icon: "database"
+iconType: "solid"
+mode: "default"
+---
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/kYAAkqiBVMk"
+  title="Supabase Integration Tutorial"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+## What is Supabase Integration?
+
+Supabase integration empowers you to seamlessly connect your Creatr projects with Supabase's robust suite of backend services. With just a few simple clicks, you can harness powerful features such as:
+
+- **Authentication:** Securely manage user sign-ups, logins, and sessions.
+- **Database:** Leverage a scalable, real-time database to store and retrieve your data effortlessly.
+- **Storage:** Easily handle file and media management without the hassle of manual setups.
+
+This integration eliminates the need for tedious backend configurations, allowing you to focus on creating exceptional user experiences.
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/supabase-intro.png"
+  alt="Supabase Integration - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/supabase-intro.png"
+  alt="Supabase Integration - Dark Mode"
+/>
+
+## 1. Register or Login to Supabase
+
+Before starting the integration, you'll need a Supabase account:
+- [Register for a new Supabase account](https://supabase.com/dashboard/sign-up) if you don't have one
+- [Login to your existing Supabase account](https://supabase.com/dashboard/sign-in) if you already have one
+
+A Supabase account is required to create projects and access their powerful backend services.
+
+## 2. Access the Supabase Integration
+
+In your Creatr dashboard, navigate to the **Integrations** section and select **Supabase**. A simple click launches the integration process, putting powerful backend services at your fingertips.
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/supabase-access.png"
+  alt="Access Supabase Integration - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/supabase-access.png"
+  alt="Access Supabase Integration - Dark Mode"
+/>
+
+## 3. Connect Your Supabase Account
+
+You will be prompted to log in or sign up for Supabase. After authentication, grant Creatr the necessary permissions to access your Supabase project seamlessly.
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/supabase-intro.png"
+  alt="Connect Supabase Account - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/supabase-intro.png"
+  alt="Connect Supabase Account - Dark Mode"
+/>
+
+## 4. Create a New Supabase Project
+
+After connecting your account, you'll need to create a new Supabase project. Simply:
+- Enter your database name
+- Choose your organization
+- Select the region closest to you for optimal performance
+
+This creates a dedicated backend environment specifically for your application.
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/supabase-modal.png"
+  alt="Create Supabase Project - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/supabase-modal.png"
+  alt="Create Supabase Project - Dark Mode"
+/>
+
+## Supabase Features
+
+Supabase integration in Creatr allows you to add powerful backend functionality to your application through simple prompts. Here's how to leverage these features:
+
+### Adding User Authentication
+
+With Creatr's AI-powered platform, adding authentication is as simple as writing a prompt. No manual coding required!
+
+#### Email/Password Authentication
+
+To add standard email/password authentication to your application, try these prompts:
+
+```
+"Add user authentication with email and password using Supabase"
+```
+
+```
+"Create login and signup pages connected to Supabase"
+```
+
+```
+"Add user authentication to my app with the following pages: login, signup, forgot password"
+```
+
+The AI will automatically:
+- Set up the necessary Supabase authentication configuration
+- Create the required UI components (login forms, signup forms)
+- Implement all the authentication logic (user registration, login, session management)
+- Handle error states and validation
+
+#### OAuth Authentication
+
+Supabase supports various OAuth providers like Google, GitHub, Facebook, and more. To use OAuth:
+
+1. First, enable your desired providers in the Supabase dashboard:
+   - Go to your Supabase project → Authentication → Providers
+   - Enable and configure each provider you want to use (you'll need to create OAuth applications in each provider's developer console)
+
+2. Then, use prompts like these to add OAuth to your application:
+
+```
+"Add Google OAuth login to my app using Supabase"
+```
+
+```
+"Create a login page with options for GitHub and Google authentication"
+```
+
+```
+"Add social login with Facebook, Twitter, and Google to my existing authentication system"
+```
+
+The AI will handle the integration, including:
+- Implementing the OAuth flow
+- Creating UI components with the proper social login buttons
+- Managing authentication state and user sessions
+- Handling successful login and error cases
+
+#### Customizing Authentication
+
+You can specify additional details in your prompts:
+
+```
+"Add user authentication with both email/password and social login options for Google and GitHub"
+```
+
+```
+"Create a login system with email verification and password reset functionality"
+```
+
+```
+"Add user authentication with a custom user profile page that shows user details"
+```
+
+### Working with Authenticated Data
+
+Once authentication is set up, you can prompt Creatr to create features that use authenticated contexts:
+
+```
+"Create a dashboard that shows user-specific data from Supabase"
+```
+
+```
+"Add a profile settings page where users can update their information"
+```
+
+```
+"Create a system where logged-in users can save their preferences to the database"
+```
+
+The AI will automatically handle the authentication state and secure database operations behind the scenes.
+
+### Working with Supabase Storage
+
+Supabase provides a powerful file storage system that allows your application to store and serve files like images, videos, documents, and more.
+
+#### Adding File Storage Features
+
+To add file storage capabilities to your application, use prompts like these:
+
+```
+"Add image upload functionality using Supabase Storage"
+```
+
+```
+"Create a file management system for users to upload and download documents"
+```
+
+```
+"Add a profile picture upload feature that stores images in Supabase"
+```
+
+The AI will implement:
+- Secure file upload and download functionality
+- Proper bucket configuration in Supabase
+- User interface components for file selection and upload
+- Progress indicators and error handling
+- Secure access policies (public or private files)
+
+#### Common Storage Use Cases
+
+Here are some specific storage features you can request:
+
+```
+"Create a photo gallery where users can upload and organize images"
+```
+
+```
+"Add a document library that allows users to upload PDFs and view them in the browser"
+```
+
+```
+"Implement a user avatar system with image cropping and previews"
+```
+
+```
+"Create a file sharing system where users can upload files and generate shareable links"
+```
+
+For all storage features, the AI will automatically set up the necessary Supabase Storage buckets, handle file upload/download logic, and create an intuitive user interface.
+
+---
+
+By following these steps, you can quickly integrate Supabase into your Creatr project and unlock advanced backend capabilities with ease. Enjoy building and deploying your enhanced web application!
+

@@ -1,0 +1,132 @@
+---
+title: "Stripe Integration"
+description: "Add payment functionality to your Creatr web applications using Stripe Payment Links."
+sidebarTitle: "Stripe"
+icon: "credit-card"
+iconType: "solid"
+mode: "default"
+---
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/Em84wTYGD4c"
+  title="Stripe Integration Tutorial"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+## Overview
+
+Stripe integration enables you to add payment capabilities to your Creatr-generated web applications without complex coding. By using Stripe Payment Links, you can quickly create payment options for products, services, subscriptions, or donations—all without handling sensitive payment information directly in your application.
+
+## What are Stripe Payment Links?
+
+Stripe Payment Links are pre-built checkout pages hosted by Stripe that you can easily integrate into your website. They offer:
+
+- **Zero coding required:** No need to build custom checkout forms
+- **Secure handling:** All payment processing happens on Stripe's secure servers
+- **Multiple payment methods:** Support for credit cards, digital wallets, and more
+- **Customization options:** Ability to match your brand with logos and colors
+- **Instant setup:** Create and deploy payment options in minutes
+
+## Integration Process
+
+### 1. Create a Stripe Account
+
+Before integrating, you'll need to [sign up for a Stripe account](https://dashboard.stripe.com/register) if you don't already have one.
+
+### 2. Create a Payment Link in Stripe
+
+1. **Log in to your Stripe Dashboard**
+2. **Navigate to Products → Payment Links**
+3. **Click "Create a Payment Link"**
+4. **Configure your product or service:**
+   - Set a name, description, and price
+   - Add images and customize the appearance
+   - Configure one-time payments or recurring subscriptions
+5. **Customize checkout options:**
+   - Add form fields for collecting customer information
+   - Set up post-payment redirects
+   - Configure email receipts
+6. **Click "Create link" to generate your payment URL**
+
+### 3. Integrate the Payment Link into Your Creatr App
+
+Once you have created your payment link, you can add it to your Creatr application in several ways:
+
+#### Option 1: Add a Payment Button
+
+Use Creatr's prompt capabilities to add a payment button:
+
+```plaintext
+"Add a 'Buy Now' button that links to my Stripe payment URL: https://buy.stripe.com/your-payment-link"
+```
+
+#### Option 2: Create a Complete Product Page
+
+For a more comprehensive solution:
+
+```plaintext
+"Create a product page with images, description, and a checkout button that links to my Stripe payment URL: https://buy.stripe.com/your-payment-link"
+```
+
+#### Option 3: Embed Multiple Payment Options
+
+For websites offering various products or services:
+
+```plaintext
+"Create a pricing page with three tiers (Basic, Pro, Enterprise) and connect each tier's 'Subscribe' button to these Stripe payment links: [Basic: URL1, Pro: URL2, Enterprise: URL3]"
+```
+
+## Tips for Effective Implementation
+
+### Testing Your Integration
+
+Always test your payment flow using Stripe's test mode before going live:
+- Use [Stripe's test card numbers](https://stripe.com/docs/testing#cards) to simulate transactions
+- Verify that post-payment redirects work correctly
+- Check that confirmation emails are being sent
+
+### Optimizing Conversion Rate
+
+- Use clear, action-oriented button text ("Buy Now", "Subscribe", "Pay")
+- Place payment buttons in prominent locations
+- Include trust indicators near payment options (security badges, testimonials)
+- Ensure mobile compatibility for all payment flows
+
+### Managing Orders
+
+After payment, you can:
+- Set up email notifications for new orders
+- Access payment details in your Stripe Dashboard
+- Export transaction data for your records
+
+## Use Cases
+
+### E-commerce Store
+Add payment links to product pages for a simple online store.
+
+### Service Booking
+Create booking forms with payment links to secure appointments.
+
+### Membership Site
+Implement tiered subscription options with different payment links.
+
+### Donation Platform
+Add donation buttons with various suggested amounts.
+
+## Roadmap: Advanced Stripe Integration
+
+Looking for more advanced Stripe capabilities? We're working on full Stripe API integration with webhook support for:
+- Custom checkout experiences
+- Real-time payment notifications
+- Subscription management
+- Automated invoicing
+
+**Vote for this feature on our roadmap: [Stripe Webhooks Integration](https://creatr.featurebase.app/p/stripe-webhooks)**
+
+---
+
+With Stripe Payment Links and Creatr, you can quickly add professional payment capabilities to your web application without dealing with complex payment integrations or security concerns.

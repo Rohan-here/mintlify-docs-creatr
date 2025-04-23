@@ -1,0 +1,142 @@
+---
+title: "GitHub Integration"
+description: "Export your Creatr projects to GitHub repositories with a seamless one-click process."
+sidebarTitle: "GitHub"
+icon: "github"
+iconType: "solid"
+mode: "default"
+---
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/Gz9GVVF1TV8"
+  title="GitHub Integration Tutorial"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+## Overview
+
+GitHub integration allows you to export your Creatr-generated web applications directly to GitHub repositories. This enables you to leverage professional version control, collaborate with other developers, and integrate your projects into broader development workflows—all without manually exporting and uploading code.
+
+## Key Benefits
+
+- **Version Control:** Track changes and maintain a complete history of your project
+- **Code Collaboration:** Share your codebase with team members or the open-source community
+- **CI/CD Integration:** Connect your repository to continuous integration and deployment pipelines
+- **Backup Security:** Keep an external copy of your project's source code
+- **Development Extensibility:** Extend your Creatr-generated code with custom development
+
+## Export Process
+
+### 1. Access GitHub Integration
+
+Click on the GitHub icon in the header of your Creatr project dashboard to begin the export process.
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/github-select.png"
+  alt="GitHub Icon Selection - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/github-select.png"
+  alt="GitHub Icon Selection - Dark Mode"
+/>
+
+### 2. Link Your GitHub Account
+
+If this is your first time using the GitHub integration, you'll need to authorize Creatr to access your GitHub account. A popup will appear guiding you through the connection process.
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/github-modal-open.png"
+  alt="GitHub Authorization Modal - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/github-modal-open.png"
+  alt="GitHub Authorization Modal - Dark Mode"
+/>
+
+### 3. Configure Repository Settings
+
+After linking your GitHub account, you'll see options to configure your new repository:
+
+- **Repository Name:** By default, this matches your Creatr project name
+- **Description:** Optional field to add context about your project
+- **Visibility:** Set to private by default for your security
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/github-modal-login-ok.png"
+  alt="GitHub Repository Configuration - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/github-modal-login-ok.png"
+  alt="GitHub Repository Configuration - Dark Mode"
+/>
+
+### 4. Create Your Repository
+
+Click **Create Repository** to initiate the export. Creatr will automatically:
+
+1. Create a new repository in your GitHub account
+2. Generate all necessary project files with proper structure
+3. Push the complete codebase to the repository
+4. Set up appropriate GitHub configurations
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/github-modal-created.png"
+  alt="GitHub Repository Created - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/github-modal-created.png"
+  alt="GitHub Repository Created - Dark Mode"
+/>
+
+### 5. Sync Future Updates
+
+As you continue developing your project in Creatr, you can push the latest changes to your GitHub repository at any time:
+
+1. Make changes and updates to your Creatr project
+2. Click the **Sync Repository** button when you're ready to update GitHub
+3. Creatr will commit and push all changes with appropriate commit messages
+
+## Important Notes
+
+### Privacy and Security
+
+- **Private Repositories:** All GitHub repositories created through Creatr are set to private by default
+- **Access Control:** Only you and users you explicitly add will have access to your repository
+- **Authorization:** You can revoke Creatr's GitHub access at any time through your GitHub settings
+
+### Current Limitations
+
+- **One-Way Sync:** Currently, the integration only supports pushing changes from Creatr to GitHub
+- **No Pull Capability:** Changes made directly in the GitHub repository will not be reflected in your Creatr project
+
+> **Coming Soon:** Two-way synchronization between Creatr and GitHub is on our roadmap. You can upvote this feature at [GitHub Two-Way Sync](https://creatr.featurebase.app/p/github-two-way-sync).
+
+## Use Cases
+
+### Development Handoff
+Export projects to GitHub for your development team to extend with custom code and functionality.
+
+### Continuous Deployment
+Connect your repository to services like Vercel, Netlify, or GitHub Pages for automatic deployment.
+
+### Code Backup
+Maintain an external backup of your project source code for added security.
+
+### Open Source Projects
+Share your Creatr-generated applications with the open-source community.
+
+---
+
+By integrating Creatr with GitHub, you gain the best of both worlds: the rapid development capabilities of AI-powered app creation and the robust version control and collaboration features of professional development workflows.

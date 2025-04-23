@@ -9,47 +9,99 @@ mode: "default"
 
 ## Overview
 
-OpenAI integration brings GPT-powered intelligence directly into your Creatr projects. Whether you’re building a chatbot, an interactive game assistant, or intelligent response logic, this integration helps you deliver dynamic AI capabilities with minimal effort. Every Creatr user receives **$10 in free OpenAI credits**, giving you ample opportunity to explore and experiment.
+OpenAI integration brings powerful AI capabilities directly into your Creatr projects. With a variety of models to choose from, you can add intelligence to any aspect of your application - from chatbots and content generation to image creation and audio processing. Every Creatr user receives **$10 in free OpenAI credits**, giving you the freedom to experiment across all available models.
 
 ## Key Features
 
-- **GPT Mini:** A streamlined version of GPT for fast, cost-effective queries.
-- **Flexible Use Cases:** Create chatbots, game bots, content generators, or any AI-driven feature you can imagine.
-- **Free Credits:** Start with $10 worth of credits to test and deploy AI-powered features without additional setup costs.
-- **Token Usage Tracking:** Monitor your OpenAI credit consumption in the Creatr dashboard.
+- **Multiple Model Types:** Choose from a range of models including:
+  - **Multi-modal Models:** Support for both vision and text inputs
+  - **Text Models:** Various GPT models optimized for different tasks
+  - **Image Generation Models:** Create visuals from text descriptions
+  - **Audio Models:** Process and generate audio content
+- **Secure Implementation:** All API calls are handled securely through our backend - no API keys are exposed on the frontend
+- **Free Credits:** Start with $10 worth of credits applicable to any model of your choice
+- **Flexible Use Cases:** Build chess games with AI opponents, implement chatbots, create content generators, or any AI-driven feature you can imagine
+- **Simple Integration:** Seamlessly add AI capabilities through an intuitive interface
 
-## 1. Enable the OpenAI Integration
+## Integration Process
 
-1. **Navigate to the Sidebar:** In the Creatr interface, look for the **OpenAI** option.
-2. **Select Integration:** Click on **OpenAI** to initiate the setup process.
-3. **Agree to Terms:** If prompted, review and confirm any usage terms or prompts.
+### 1. Access the Build with AI Feature
 
-> **Tip:** You can also keep track of your OpenAI token usage under the **Tokens** section in the sidebar.
+In the Creatr interface, locate and click on the **Build with AI** icon in the sidebar to begin the integration process.
 
-## 2. Provide Your Prompt
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/bwai-select.png"
+  alt="Build with AI Selection - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/bwai-select.png"
+  alt="Build with AI Selection - Dark Mode"
+/>
 
-Once integrated, simply describe the functionality you need:
+### 2. Select Your Models
+
+Choose which OpenAI models you want to integrate into your project based on your specific needs.
+
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/bwai-modal-open.png"
+  alt="Model Selection Modal - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/bwai-modal-open.png"
+  alt="Model Selection Modal - Dark Mode"
+/>
+
+### 3. Apply and Describe Your Integration
+
+Click **Apply** to confirm your model selection, then describe how you want to integrate the model through the chat interface. Be specific about the functionality you need, for example:
+
 ```plaintext
-"Build a chatbot that responds to user queries about our product features and pricing."
+"Create a chatbot that can answer questions about my product and also analyze images uploaded by users"
 ```
-Creatr will leverage GPT Mini to generate or update the logic behind your application.
 
-## 3. Explore the Possibilities
+Creatr will generate the necessary code and components based on your description, integrating the selected AI models into your application.
 
-- **Chatbots:** Design intelligent Q&A experiences for customer support or product FAQs.
-- **Interactive Game Bots:** Add AI-driven characters or adversaries to your web-based games.
-- **Intelligent Responses:** Automate content generation, summarize user inputs, or provide real-time suggestions.
+## Tips and Tricks
 
-## 4. Monitor Token Usage
+### Refine Your AI Integration
 
-Keep an eye on how many tokens you’ve consumed and how much of your $10 credit remains.
+You can refine and adjust the AI integration directly through the chat interface:
 
-## 5. Refine and Deploy
+- **Improve Responses:** Try "Make the chatbot responses more friendly and conversational"
+- **Add Features:** Say "Add the ability for the chatbot to remember previous conversations"
+- **Modify Behavior:** Request "Change the AI to provide shorter, more concise answers"
 
-1. **Prompt-Based Editing:** Continue refining your AI logic by entering new prompts or adjusting existing ones.
-2. **Integration with Other Services:** Combine OpenAI with Supabase or Resend to create full-stack, AI-powered experiences.
-3. **One-Click Deployment:** Once satisfied, deploy your project. All AI interactions will be handled seamlessly in production.
+The AI will update your integration based on these refinements without requiring you to start over.
+
+### Optimize Credit Usage
+
+- Use more efficient models for simple tasks to conserve credits
+- Implement caching for common AI responses
+- Set appropriate context lengths and rate limits
+
+## Example Projects
+
+Here are some examples of what you can build using the OpenAI integration:
+
+### Interactive Game Assistants
+Create an AI chess opponent that can play at various difficulty levels and explain its moves.
+
+### Smart Content Creation
+Build a tool that generates marketing copy, blog posts, or product descriptions based on simple prompts.
+
+### Visual Analysis Applications
+Develop applications that can analyze and describe uploaded images or provide insights on visual content.
+
+### Intelligent Customer Support
+Create a support chatbot that can answer questions, troubleshoot problems, and escalate to human support when needed.
+
+### Language Translation Tools
+Build translation tools with natural language understanding that preserve context and tone.
 
 ---
 
-With OpenAI integration, Creatr empowers you to build AI-driven features without wrestling with complex APIs or configuration. Leverage your $10 free credit to experiment, innovate, and bring next-level intelligence to your web applications—all from the convenience of your Creatr dashboard.
+With OpenAI integration, Creatr empowers you to build sophisticated AI-driven features without dealing with complex API configurations or security concerns. Leverage your $10 free credit to experiment across a variety of models and bring intelligent functionality to your web applications—all through a simple, intuitive interface.

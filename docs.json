@@ -14,7 +14,8 @@
         "group": "Get Started",
         "pages": [
           "introduction/what-is-creatr",
-          "introduction/getting-started"
+          "introduction/getting-started",
+          "introduction/changelog"
         ]
       },
       {
@@ -22,52 +23,22 @@
         "pages": [
           "using/enter-the-prompt",
           "using/dashboard-overview",
-          "using/editing-and-deployment"
+          "using/editing",
+          "using/assets",
+          "using/custom-components",
+          "using/deployment",
+          "using/export-code",
+          "custom-domains-guides/custom-domain"
         ]
       },
       {
         "group": "Integrations",
         "pages": [
-          {
-            "group": "Supabase",
-            "pages": [
-              "integrations/supabase/introduction",
-              "integrations/supabase/how-to",
-              "integrations/supabase/edge-functions"
-            ]
-          },
+          "integrations/supabase",
           "integrations/openai",
-          "integrations/resend"
-        ]
-      },
-      {
-        "group": "Connecting a third-party domain to Creatr",
-        "pages": [
-          "custom-domains-guides/custom-domain"
-        ]
-      },
-      {
-        "group": "Advanced Features & Customizations",
-        "pages": [
-          "advanced/attachments",
-          "advanced/enhancing-prompts",
-          "advanced/components-and-select-elements",
-          "advanced/forking-projects",
-          "advanced/export-options"
-        ]
-      },
-      {
-        "group": "Project Management & Analytics",
-        "pages": [
-          "management/project-analytics",
-          "management/changing-assets"
-        ]
-      },
-      {
-        "group": "Support & Resources",
-        "pages": [
-          "support/contact-support",
-          "support/knowledge-base"
+          "integrations/maps",
+          "integrations/stripe",
+          "integrations/github"
         ]
       }
     ],
@@ -76,6 +47,30 @@
         {
           "anchor": "Creatr",
           "href": "https://getcreatr.com"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://discord.com/invite/FzFAS6BCF8",
+          "icon": {
+            "library": "fontawesome",
+            "name": "discord"
+          }
+        },
+        {
+          "anchor": "Request Feature",
+          "href": "https://creatr.featurebase.app",
+          "icon": {
+            "library": "fontawesome",
+            "name": "rocket"
+          }
+        },
+        {
+          "anchor": "Youtube",
+          "href": "https://www.youtube.com/@getcreatrxyz",
+          "icon": {
+            "library": "fontawesome",
+            "name": "video"
+          }
         }
       ]
     }
