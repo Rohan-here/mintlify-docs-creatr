@@ -237,7 +237,127 @@ Here are some specific storage features you can request:
 
 For all storage features, the AI will automatically set up the necessary Supabase Storage buckets, handle file upload/download logic, and create an intuitive user interface.
 
+### Configuring Redirect URLs
+
+When implementing Supabase authentication in your Creatr project, you'll need to handle redirect URLs properly. By default, Supabase redirects authenticated users to `localhost:3000`, which needs to be updated for your deployed application.
+
+#### Setting Up Redirect URLs in Supabase Dashboard
+
+First, configure your Supabase project's redirect URLs:
+
+1. Navigate to your Supabase dashboard
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/supabase-home.png"
+  alt="Supabase Dashboard - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/supabase-home.png"
+  alt="Supabase Dashboard - Dark Mode"
+/>
+
+2. Open the sidebar and select "Authentication"
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/supabase-auth.png"
+  alt="Supabase Authentication - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/supabase-auth.png"
+  alt="Supabase Authentication - Dark Mode"
+/>
+
+3. Click on "URL Configuration"
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/supabase-url.png"
+  alt="URL Configuration - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/supabase-url.png"
+  alt="URL Configuration - Dark Mode"
+/>
+
+4. Add your deployment URLs (e.g., `https://your-project.getcreatr.dev`)
+<img
+  className="block dark:hidden mt-4 w-full rounded-xl"
+  src="/images/supabase-linked.png"
+  alt="Updated Site URL - Light Mode"
+/>
+<img
+  className="hidden dark:block mt-4 w-full rounded-xl"
+  src="/images/supabase-linked.png"
+  alt="Updated Site URL - Dark Mode"
+/>
+
+#### Prompting Creatr to Handle Redirect URLs
+
+After configuring Supabase, you can use these prompts to implement the correct redirect URL handling:
+
+```
+"Update the Supabase authentication to use the current domain as the redirect URL"
+```
+
+```
+"Make the Supabase auth redirect URL dynamic based on the environment"
+```
+
+```
+"Add environment-aware redirect URL handling for Supabase authentication using window.location.origin"
+```
+
+Creatr will automatically:
+- Implement dynamic redirect URL handling
+- Use `window.location.origin` to support all environments
+- Handle the authentication flow correctly
+
+#### Pro Tips for Prompting
+
+1. **Multi-Environment Support**
+```
+"Set up Supabase auth with dynamic redirects that work across preview, production, and custom domains"
+```
+
+2. **Local Development**
+```
+"Add Supabase authentication that works in both development and production environments"
+```
+
+3. **Custom Domain Support**
+```
+"Update Supabase auth to handle redirects for my custom domain and Creatr domains"
+```
+
+#### Troubleshooting Through Prompts
+
+If you encounter issues, try these prompts:
+
+1. **Fix Redirect Issues**
+```
+"Debug the Supabase authentication redirect - users are not being redirected correctly after login"
+```
+
+2. **Environment-Specific Problems**
+```
+"Fix the Supabase auth redirect for the production environment at https://my-app.getcreatr.app"
+```
+
+3. **CORS Issues**
+```
+"Resolve CORS errors in Supabase authentication redirects"
+```
+
+Remember to add all your possible URLs in Supabase's URL Configuration:
+- Preview URL: `https://your-project.getcreatr.dev`
+- Production URL: `https://your-project.getcreatr.app`
+- Custom domain (if applicable)
+
 ---
+
+By using these prompts, Creatr will help you implement proper redirect URL handling in your Supabase authentication flow, ensuring it works correctly across all environments.
 
 By following these steps, you can quickly integrate Supabase into your Creatr project and unlock advanced backend capabilities with ease. Enjoy building and deploying your enhanced web application!
 
